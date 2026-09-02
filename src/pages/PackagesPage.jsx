@@ -1,0 +1,2 @@
+import Packages from '../components/Packages.jsx'; import Seo from '../components/Seo.jsx'; import Breadcrumbs from '../components/Breadcrumbs.jsx'
+export default function PackagesPage(){return <><Seo path="/packages"/><Breadcrumbs items={[{label:'Pricing'}]}/><section className="pt-8 pb-2"><div className="max-w-content mx-auto section-pad"><span className="eyebrow">Website development packages & pricing</span><h1 className="mt-4 font-display text-4xl sm:text-6xl font-semibold">Website development packages with clear scope and support.</h1></div></section><Packages/></>}

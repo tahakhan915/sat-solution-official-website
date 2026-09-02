@@ -1,0 +1,2 @@
+import Process from '../components/Process.jsx'; import Seo from '../components/Seo.jsx'; import Breadcrumbs from '../components/Breadcrumbs.jsx'
+export default function ProcessPage(){return <><Seo path="/process"/><Breadcrumbs items={[{label:'Process'}]}/><section className="pt-8 pb-2"><div className="max-w-content mx-auto section-pad"><span className="eyebrow">Our web development process</span><h1 className="mt-4 font-display text-4xl sm:text-6xl font-semibold">From discovery to launch: a clear development process.</h1></div></section><Process/></>}

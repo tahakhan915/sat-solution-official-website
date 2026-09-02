@@ -1,0 +1,53 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/portfolio/maintainiq",
+      "destination": "/case-studies/maintainiq",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/flowdesk",
+      "destination": "/case-studies/flowdesk",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/comic-reader",
+      "destination": "/case-studies/comic-reader",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/petacare",
+      "destination": "/case-studies/petacare",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/forno-pizza",
+      "destination": "/case-studies/forno-pizza",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "satsolution.tech"
+        }
+      ],
+      "destination": "https://www.satsolution.tech/$1",
+      "permanent": true
+    }
+  ]
+}
